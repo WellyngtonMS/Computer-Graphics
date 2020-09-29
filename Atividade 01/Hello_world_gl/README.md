@@ -13,12 +13,11 @@ Após o download, deverá compilar e executar este programa da seguinte maneira:
 -  Modern
   ````
       $ make
-      $./moderngl_hello_world 
+      $ ./moderngl_hello_world 
   ````
 -  Old
   ````
       $ make
-      $./old_hello_world 
+      $ ./old_hello_world 
   ````
   Durante a compilação alguns warnings poderão aparecer na tela. Uma vez compilado, ao ser executado, o programa apresentará uma janela contendo um triângulo colorido, como ilustra a Figura 1:
-  
