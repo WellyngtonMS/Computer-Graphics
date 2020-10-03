@@ -6,7 +6,7 @@ Os objetivos deste trabalho são:
 -  Familizarizar-se com a estrutura de um programa OpenGL moderno.
 
 ## Desenvolvimento
-Para a realização deste trabalho, inicialmente deve-se fazer download do programa OpenGL disponível no repositório da disciplina [capagot/ICG](https://github.com/capagot/icg).
+Para a realização deste trabalho, inicialmente deve-se fazer download do material OpenGL disponível no repositório da disciplina [capagot/ICG](https://github.com/capagot/icg).
 Após o download, deverá compilar e executar este programa da seguinte maneira:
 ##### Ubuntu 20.04 LTS
 
@@ -34,4 +34,4 @@ Uma vez compilado, ao ser executado, o programa apresentará uma janela contendo
 ![Alt text](https://user-images.githubusercontent.com/54148100/94623221-11a99180-028a-11eb-8274-3c2bf81e4bdd.gif)
   
 ## Dificuldades
-As maiores dificuldades encontradas na primeira atividade, foram relacionadas a instalação do ambiente de desenvolvimento e das bibliotecas necessárias para a compilação e a execução dos códigos de exemplo.
+As maiores dificuldades encontradas na primeira atividade, foram relacionadas a instalação do ambiente de desenvolvimento e das bibliotecas necessárias para a compilação e a execução dos códigos da atividade.
