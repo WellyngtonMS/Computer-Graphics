@@ -15,13 +15,13 @@ Após o download, deverá compilar e executar este programa da seguinte maneira:
 
 -  Modern
   ````
-      $ make
-      $ ./moderngl_hello_world 
+$ make
+$ ./moderngl_hello_world 
   ````
 -  Old
   ````
-      $ make
-      $ ./old_hello_world 
+$ make
+$ ./old_hello_world 
   ````
   Durante a compilação alguns warnings poderão aparecer na tela.
   
@@ -38,3 +38,19 @@ Uma vez compilado, ao ser executado, o programa apresentará uma janela contendo
   
 ## Dificuldades
 As maiores dificuldades encontradas na primeira atividade, foram relacionadas a instalação do ambiente de desenvolvimento e das bibliotecas necessárias para a compilação e a execução dos códigos da atividade.
+Inicialmente foram executados os seguintes comandos:
+````
+$ sudo apt-get update
+$ sudo apt-get install libgll-mesa-dev
+$ sudo apt-get install libglu1-mesa-dev freeglut3-dev mesa-common-dev
+````
+Porém alguns erros relacionados aos arquivos .glsl como o seguinte, apareceram:
+````
+ERROR::SHADER::VERTEX::COMPILATION_FAILED
+0:1(10): error: GLSL 3.30 is not supported. Supported version are: 1.10, 1.20, 1,30, 1.00 ES, and 3.00 ES
+````
+Facilmente resolvidos com as linhas de comando:
+````
+$ sudo apt-get install build-essential libgl1-mesa-dev
+$ sudo apt-get install libglew-dev libsdl2-dev libsdl2-image-dev libglm-dev libfreetype6-dev
+````
