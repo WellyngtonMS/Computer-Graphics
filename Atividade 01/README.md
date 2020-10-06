@@ -1,5 +1,8 @@
 # Compilando e Executando um Programa OpenGL Moderno
 
+## Descrição
+A atividade 1 consiste em apenas executar um programa, que utiliza shaders para desenhar um triângulo colorido na tela, verificando então a integrida da instalação do modern OpenGL de maneira correta.
+
 ## Objetivo
 Os objetivos deste trabalho são:
 -  Verificar se o ambiente de desenvolvimento em OpenGL 3.3 está corretamente configurado no computador;
