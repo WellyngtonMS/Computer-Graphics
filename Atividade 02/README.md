@@ -82,9 +82,40 @@ Com o algoritmo de Bresenham implementado e a interpolação linear também, par
   <p align="center">
     Figura 6: Implementação da função DrawTriangle.
   </p>
+As cores dos pixels ao longo das linhas rasterizadas foram obtidas por meio de interpolação linear das cores dos vértices.
 
 ## Resultados
-
+-  ## PutPixel
+  <p align="center">
+    <img src="https://user-images.githubusercontent.com/54148100/96207851-9c54e680-0f42-11eb-87a5-d6fb4e1527cc.png" alt="Sublime's custom image"/>
+  </p>
+  <p align="center">
+    Figura 7: Exemplo de execução da função PutPixel.
+  </p>
+  
+  Valores usados no exemplo acima podem ser vistos [aqui](https://github.com/WellyngtonMS/Computer-Graphics/blob/2ff0643626b1d760681693cf11eb8eb263c2c277/Atividade%2002/mygl.c#L148-L155).
+  
+-  ## DrawLine
+  <p align="center">
+    <img src="https://user-images.githubusercontent.com/54148100/96208808-ae378900-0f44-11eb-986d-27d141c835c2.png" alt="Sublime's custom image"/>
+  </p>
+  <p align="center">
+    Figura 8: Exemplo da execução da função DrawLine.
+  </p>
+  
+  Valores usados no exemplo acima podem ser vistos [aqui](https://github.com/WellyngtonMS/Computer-Graphics/blob/2ff0643626b1d760681693cf11eb8eb263c2c277/Atividade%2002/mygl.c#L158-L166).
+  
+-  ## DrawTriangle
+  <p align="center">
+    <img src="https://user-images.githubusercontent.com/54148100/96209006-0d959900-0f45-11eb-9fa1-c9b069b5571b.png" alt="Sublime's custom image" width="460.8" height="460.8"/>
+    <img src="https://user-images.githubusercontent.com/54148100/96209027-1b4b1e80-0f45-11eb-926a-d0289941af1a.png" alt="Sublime's custom image" width="460.8" height="460.8"/>
+  </p>
+  <p align="center">
+    Figura 9: Exemplos da execução da função DrawTriangle.
+  </p>
+  
+  Valores usados no exemplo acima podem ser vistos [aqui](https://github.com/WellyngtonMS/Computer-Graphics/blob/2ff0643626b1d760681693cf11eb8eb263c2c277/Atividade%2002/mygl.c#L169-L172).
+  
 ## Dificuldades
 
 ## Referências
