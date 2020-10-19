@@ -85,6 +85,7 @@ Com o algoritmo de Bresenham implementado e a interpolação linear também, par
 As cores dos pixels ao longo das linhas rasterizadas foram obtidas por meio de interpolação linear das cores dos vértices.
 
 ## Resultados
+De modo geral os resultados foram extremamente satisfatórios, visto que toda a implementação desenvolvida da atividade estava de acordo com sua finalidade e aplicação. A seguir alguns exemplos dos resultados obtidos.
 -  ## PutPixel
   <p align="center">
     <img src="https://user-images.githubusercontent.com/54148100/96207851-9c54e680-0f42-11eb-87a5-d6fb4e1527cc.png" alt="Sublime's custom image"/>
@@ -117,6 +118,9 @@ As cores dos pixels ao longo das linhas rasterizadas foram obtidas por meio de i
   Valores usados no exemplo acima podem ser vistos [aqui](https://github.com/WellyngtonMS/Computer-Graphics/blob/2ff0643626b1d760681693cf11eb8eb263c2c277/Atividade%2002/mygl.c#L169-L172).
   
 ## Dificuldades
+Durante o desenvolvimento desta atividade algumas dificuldades bem como alguns erros surgiram, todos resolvidos para a devida conclusão da atividade. Dentre as dificuldades encontradas, posso citar a implementação do algoritmo de Bresenham que se apresetou desafiador no quesito decisão. De formar sucinta, na rasterização de uma linha é necessário decidir qual octante o próximo pixel vai estar e consequentemente acender, e isto foi extremamente complexo desenvolver.
+
+Além da dificuldade já comentada, alguns erros e problemas com funções matemáticas da biblioteca "math.h" surgiram. Inicialmente não se sabia da necessidade de utilizar tal biblioteca, mas na implementação da função de interpolação linear das cores foi observado que alguns cálculos matemáticos seraim necessários, os quais requisitavam o uso de funções auxiliares contidas na referida biblioteca. Após a conclusão da implementação desta função, alguns erros na compilação surgiram e rapidamente resolvidos com o acréscimo de um parâmetro na linha de comando do arquivo de compilação.
 
 ## Referências
 - [Imagem Digital - Wikipédia](https://pt.wikipedia.org/wiki/Imagem_digital)
