@@ -126,7 +126,14 @@ Após este procedimento, é necessário construir as matrizes que formarão a Vi
   <p align="center">
     <img src="https://user-images.githubusercontent.com/54148100/100810203-aeb5b180-3416-11eb-9925-41af69e2618e.png" alt="Sublime's custom image"/>
   </p>
-  
+Resultado:
+  <p align="center">
+    <img src="https://user-images.githubusercontent.com/54148100/100786187-874bee00-33f0-11eb-925d-bd7869e0adfe.png" alt="Sublime's custom image"/>
+  </p>
+  <p align="center">
+    Figura 5: Resultado do 4° exercício.
+  </p>
+
 As modificações, assim como códigos adicionais incluídos neste exercício podem ser vistos com mais detalhes [aqui](https://github.com/WellyngtonMS/Computer-Graphics/blob/0e577d58c0d658e9bff765510e497fecb0b4c83f/Atividade%2003/Exerc%C3%ADcio%2004/main.cpp#L76-L98).
 
 - ### Transformação livre
