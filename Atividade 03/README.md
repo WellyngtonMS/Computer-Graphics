@@ -84,11 +84,11 @@ Para este exercício, foi necessário modificar a matriz de projeção para que 
   </p>
 Modificando a matriz de projeção no template, temos:
   <p align="center">
-    <img src="https://user-images.githubusercontent.com/54148100/100783722-e60f6880-33ec-11eb-87a2-fc79d53ebbcd.png" alt="Sublime's custom image"/>
+    <img src="https://user-images.githubusercontent.com/54148100/100938909-3e6d6580-34d4-11eb-9159-ffba1c307cab.png" alt="Sublime's custom image"/>
   </p>
 E o resultado na cena é:
   <p align="center">
-    <img src="https://user-images.githubusercontent.com/54148100/100783842-13f4ad00-33ed-11eb-911e-2c34ca4f9ed4.png" alt="Sublime's custom image"/>
+    <img src="https://user-images.githubusercontent.com/54148100/100939047-6d83d700-34d4-11eb-9015-784ebe1aca3f.png" alt="Sublime's custom image"/>
   </p>
   <p align="center">
     Figura 3: Resultado do 3° exercício.
@@ -128,7 +128,7 @@ Após este procedimento, é necessário construir as matrizes que formarão a Vi
   </p>
 Resultado:
   <p align="center">
-    <img src="https://user-images.githubusercontent.com/54148100/100786187-874bee00-33f0-11eb-925d-bd7869e0adfe.png" alt="Sublime's custom image"/>
+    <img src="https://user-images.githubusercontent.com/54148100/100939225-b5a2f980-34d4-11eb-8ec2-b17d956cd00a.png" alt="Sublime's custom image"/>
   </p>
   <p align="center">
     Figura 5: Resultado do 4° exercício.
