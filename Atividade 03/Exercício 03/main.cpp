@@ -1,11 +1,11 @@
 /*****************************************************************************
- * Este programa È baseado no exemplo "Hello-Triangle" disponÌvel
+ * Este programa √© baseado no exemplo "Hello-Triangle" dispon√≠vel
  * em
  *     https://learnopengl.com/Getting-started/Hello-Triangle
  *
- *     A principal diferenÁa entre este programa e o exemplo acima È que neste
- * os vertex e fragment shaders s„o carregados a partir de arquivos externos,
- * ao inves de estarem hard coded no cÛdigo fonte.
+ *     A principal diferen√ßa entre este programa e o exemplo acima √© que neste
+ * os vertex e fragment shaders s√£o carregados a partir de arquivos externos,
+ * ao inves de estarem hard coded no c√≥digo fonte.
  *     Isso da mais flexibilidade para se fazerem experimentos com os shaders,
  * pois nao e necessario se recompilar o programa a cada vez que os shaders forem
  * alterados.
@@ -30,7 +30,7 @@ unsigned int vbo; // Vertex buffer object ID
 unsigned int vao; // Vertex array object ID
 
 //********************************************************************************************************************
-// A funÁ„o LoadShader() È baseada em https://stackoverflow.com/a/174552/6107321
+// A fun√ß√£o LoadShader() √© baseada em https://stackoverflow.com/a/174552/6107321
 void LoadShader(char* file_name, char** shader_source) {
     long length;
     FILE* f = fopen(file_name, "rb");
@@ -59,7 +59,7 @@ void Display(void) {
     // Limpa a tela e o depth buffer
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
-    // Define a posiÁ„o da Viewport dentro da janela OpenGL
+    // Define a posi√ß√£o da Viewport dentro da janela OpenGL
     glViewport(0, 0, IMAGE_WIDTH, IMAGE_HEIGHT);
 
     // Seleciona o Shader Program a ser utilizado.
@@ -84,11 +84,11 @@ void Display(void) {
 
     // Matriz Projection //////////////////////////////////////////////////////
     // You will have to change the contents of this matrix for the exercises
-    float d = 0.5;
+    float d = 0.125;
     float proj_array[16] = {1.0f, 0.0f, 0.0f, 0.0f, 
                             0.0f, 1.0f, 0.0f, 0.0f, 
                             0.0f, 0.0f, 1.0f, -1/d, 
-                            0.0f, 0.0f, d, 1.0f};
+                            0.0f, 0.0f, d, 0.0f};
 
     glm::mat4 proj_mat = glm::make_mat4(proj_array);
 
@@ -138,18 +138,18 @@ int main(int argc, char** argv) {
     // Inicializa a GLUT
     glutInit(&argc, argv);
 
-    // Cria um color buffer onde cada pixel È representado por 4 bytes (RGBA)
-    // Cria um depth buffer (para resolver a oclus„o)
+    // Cria um color buffer onde cada pixel √© representado por 4 bytes (RGBA)
+    // Cria um depth buffer (para resolver a oclus√£o)
     // Cria dois color buffers para reduzir o flickering
     glutInitDisplayMode(GLUT_RGBA | GLUT_DEPTH | GLUT_DOUBLE);
 
-    // Define as dimensıes do color buffer (ou a ·rea ˙til do OpenGL na janela)
+    // Define as dimens√µes do color buffer (ou a √°rea √∫til do OpenGL na janela)
     glutInitWindowSize(IMAGE_WIDTH, IMAGE_HEIGHT);
 
-    // PosiÁ„o do canto superior esquerdo da janela OpenGL em relaÁ„o a tela do computador.
+    // Posi√ß√£o do canto superior esquerdo da janela OpenGL em rela√ß√£o a tela do computador.
     glutInitWindowPosition(100, 100);
 
-    // TÌtulo da janela
+    // T√≠tulo da janela
     glutCreateWindow("Modern OpenGL: Assignment 3");
 
     // Load the OpenGL extensions
@@ -173,7 +173,7 @@ int main(int argc, char** argv) {
     // Cria um identificador para o Vertex Shader
     vertex_shader = glCreateShader(GL_VERTEX_SHADER);
 
-    // Vincula o cÛdigo fonte do Vertex Shader ao seu identificador
+    // Vincula o c√≥digo fonte do Vertex Shader ao seu identificador
     glShaderSource(vertex_shader, 1, &vertex_shader_source, NULL);
 
     // Compila dinamicamente (em tempo de execucao) o Vertex Shader
@@ -200,7 +200,7 @@ int main(int argc, char** argv) {
     // Cria um identificador para o Fragment Shader
     fragment_shader = glCreateShader(GL_FRAGMENT_SHADER);
 
-    // Vincula o cÛdigo fonte do Fragment Shader ao seu identificador
+    // Vincula o c√≥digo fonte do Fragment Shader ao seu identificador
     glShaderSource(fragment_shader, 1, &frag_shader_source, NULL);
 
     // Compila dinamicamente (em tempo de execucao) o Fragment Shader
@@ -231,8 +231,8 @@ int main(int argc, char** argv) {
         printf("ERROR::SHADER::PROGRAM::LINKING_FAILED\n%s\n", info_log);
     }
 
-    // Deleta os Fragment e Vertex Shaders, j· que eles j· foram incorporados 
-    // ao Program Shader e n„o s„o mais necess·rios.
+    // Deleta os Fragment e Vertex Shaders, j√° que eles j√° foram incorporados 
+    // ao Program Shader e n√£o s√£o mais necess√°rios.
     glDeleteShader(vertex_shader);
     glDeleteShader(fragment_shader);
 
@@ -245,24 +245,24 @@ int main(int argc, char** argv) {
     // Vincula o buffer criado a um Vertex Buffer Object (VBO)
     glBindBuffer(GL_ARRAY_BUFFER, vbo);
 
-    // Carrega as propriedades (coordenadas + cores) dos vÈrtices no VBO
+    // Carrega as propriedades (coordenadas + cores) dos v√©rtices no VBO
     glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STATIC_DRAW);
 
-    // Atributo 'posiÁ„o' do vÈrtice
+    // Atributo 'posi√ß√£o' do v√©rtice
     glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(float), (void*)0);
     glEnableVertexAttribArray(0);
-    // Atributo 'cor' do vÈrtice
+    // Atributo 'cor' do v√©rtice
     glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(float), (void*)(3 * sizeof(float)));
     glEnableVertexAttribArray(1);
 
     // Define a cor a ser utilizada para limpar o color buffer a cada novo frame
     glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
 
-    // Habilita o teste de profundidade (oclus„o).
+    // Habilita o teste de profundidade (oclus√£o).
     GL_CHECK(glEnable(GL_DEPTH_TEST));
 
-    atexit(ExitProg);          // deifne o callback de saÌda do programa
-    glutDisplayFunc(Display);  // define o callback que renderizar· cada frame
+    atexit(ExitProg);          // deifne o callback de sa√≠da do programa
+    glutDisplayFunc(Display);  // define o callback que renderizar√° cada frame
 
     // Framebuffer scan loop.
     glutMainLoop();
