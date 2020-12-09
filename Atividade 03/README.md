@@ -137,8 +137,16 @@ Resultado:
 As modificações, assim como códigos adicionais incluídos neste exercício podem ser vistos com mais detalhes [aqui](https://github.com/WellyngtonMS/Computer-Graphics/blob/0e577d58c0d658e9bff765510e497fecb0b4c83f/Atividade%2003/Exerc%C3%ADcio%2004/main.cpp#L76-L98).
 
 - ### Transformação livre
+Neste exercício como o próprio nome sugere, foram feitas transformações livres através de modificações nas matrizes Model, View e Projection de forma a gerar uma cena diferente das geradas anteriormente. O resultado pode ser visto à seguir:
+
+  <p align="center">
+    <img src="https://user-images.githubusercontent.com/54148100/101556938-b2a77d80-399a-11eb-808c-c1ed0f9c43db.gif" alt="Sublime's custom image"/>
+  </p>
+
+Para mais detalhes das modificações que foram feitas para chegar a este resultado, veja [aqui](https://github.com/WellyngtonMS/Computer-Graphics/blob/86d3d81b20ac09ba7cc402b5bb62904d3a077f7f/Atividade%2003/Exerc%C3%ADcio%2005/main.cpp#L59-L146).
 
 ## Dificuldades
+Esta atividade foi de extrema importância para o compreendimento de forma eficiente de como o pipeline gráfico funciona e uma boa introdução ao OpenGL também. A maior dificuldade encontrada foi modificar corretamente os valores nas matrizes, de modo a ter certeza de onde alterar, visto que um mínimo erro poderia ocasioar reprodução de telas pretas, sem nenhuma cena, assim impossibilitando entender o que havia acontecido de errado.
 
 ## Referências
 - [Pipeline Gráfico - Wikipédia](https://en.wikipedia.org/wiki/Graphics_pipeline)
